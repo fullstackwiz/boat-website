@@ -1,10 +1,5 @@
-@import url("https://fonts.googleapis.com/css2?family=Exo+2:wght@300;400;800&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Exo+2:wght@300;400;500;600;700;800&display=swap");
 
 body {
-  margin: 0;
-  font-family: "Exo 2", sans-serif !important;
-}
-
-.clip {
-  clip-path: ellipse(100% 100% at 50% 50%);
+    font-family: 'Exo 2', sans-serif;
 }

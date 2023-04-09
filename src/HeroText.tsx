@@ -9,7 +9,7 @@ function HeroText() {
       initial={{ height: 0 }}
       animate={{ height: "unset" }}
       transition={{ delay: animationStart, duration: 1 }}
-      className="flex flex-col items-center w-full text-center"
+      className="flex flex-col items-center text-center"
     >
       <motion.div
         variants={reveal}

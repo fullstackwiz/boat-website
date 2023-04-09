@@ -1,6 +1,6 @@
-import { motion } from "framer-motion";
-import ArrowRight from "./ArrowRight";
 import Logo from "./Logo";
+import ArrowRight from "./ArrowRight";
+import { motion } from "framer-motion";
 import { animationStart, reveal } from "./utils/animation";
 
 function Navbar() {
@@ -23,31 +23,29 @@ function Navbar() {
         }}
         className="w-full flex items-center justify-around h-80px fixed top-0 bg-white z-100"
       >
-        <motion.div className="w-full flex justify-around">
-          <motion.div variants={reveal}>
-            <Logo></Logo>
-          </motion.div>
-          <div className="flex gap-20px items-center <md:hidden">
-            <motion.span variants={reveal} className="cursor-pointer">
-              solutions.
-            </motion.span>
-            <motion.span variants={reveal} className="cursor-pointer">
-              courses.
-            </motion.span>
-            <motion.span variants={reveal} className="cursor-pointer">
-              resources.
-            </motion.span>
-            <motion.span variants={reveal} className="cursor-pointer">
-              about.
-            </motion.span>
-          </div>
-          <motion.div
-            variants={reveal}
-            className="flex gap-5px items-center cursor-pointer"
-          >
-            <span className="mb-3px">sign in</span>
-            <ArrowRight></ArrowRight>
-          </motion.div>
+        <motion.div variants={reveal}>
+          <Logo />
+        </motion.div>
+        <div className="flex gap-20px items-center <md:hidden">
+          <motion.span variants={reveal} className="cursor-pointer">
+            solutions.
+          </motion.span>
+          <motion.span variants={reveal} className="cursor-pointer">
+            courses.
+          </motion.span>
+          <motion.span variants={reveal} className="cursor-pointer">
+            resources.
+          </motion.span>
+          <motion.span variants={reveal} className="cursor-pointer">
+            about.
+          </motion.span>
+        </div>
+        <motion.div
+          variants={reveal}
+          className="flex gap-5px items-center cursor-pointer"
+        >
+          <span className="mb-3px">sign in</span>
+          <ArrowRight />
         </motion.div>
       </motion.div>
     </motion.div>
